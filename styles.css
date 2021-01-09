@@ -1,0 +1,50 @@
+body{
+  margin: 0;
+  user-select: none;
+  background-color: #00004e;
+}
+.homebg{
+  background-image: url(img/home.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+  position: relative;
+  text-align: center;
+  transition: opacity 1000ms;
+}
+.botton{
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  width: 30%;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  bottom: 20%;
+  -webkit-animation:blink 1.5s ease-in-out infinite alternate;
+  -moz-animation:blink 1.5s ease-in-out infinite alternate;
+  animation:blink 1.5s ease-in-out infinite alternate;
+}
+.homebg.is-hidden{
+  opacity: 0;
+  pointer-events: none;
+}
+@-webkit-keyframes blink{
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-moz-keyframes blink{
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@keyframes blink{
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+  
