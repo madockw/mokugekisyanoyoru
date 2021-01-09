@@ -2,6 +2,10 @@ body{
   margin: 0;
   user-select: none;
   background-color: #00004e;
+  position: relative;
+}
+h1{
+  margin: 0;
 }
 .homebg{
   background-image: url(img/home.jpg);
@@ -10,13 +14,13 @@ body{
   background-size: cover;
   width: 100vw;
   height: 100vh;
-  background-color: red;
-  position: relative;
+  position: absolute;
+  top: 0;
   text-align: center;
   transition: opacity 1000ms;
 }
 .botton{
-  font-size: 50px;
+  font-size: 80px;
   font-weight: bold;
   color: #fff;
   width: 30%;
@@ -46,5 +50,13 @@ body{
 @keyframes blink{
   0% {opacity:0;}
   100% {opacity:1;}
+}
+
+.player{
+  color: #fff;
+  width: 80vw;
+  height: 80vh;
+  margin: auto;
+  text-align: center;
 }
   
