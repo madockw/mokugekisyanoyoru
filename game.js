@@ -26,15 +26,17 @@ $('.nimaime').click(function(){
 });
 
 $(document).on('click','.omote',function(){
+  $('.omote').removeClass('opao');
+});
+$(document).on('click','.omote',function(){
   $('.sentaku').css('display','none');
   $('.qestion').css('display','block');
+  $(this).addClass('opao');
 });
 
 $('.no').click(function(){
   $('.qestion').css('display','none');
   $('.sentaku').css('display','block');
-  console.log('uti');
 });
 
 // var yakunum = [1,2,3,4,5];
-
